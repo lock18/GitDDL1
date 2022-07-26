@@ -12,6 +12,9 @@ String HCI_Token            = "pmiddl0"     // Change to your assigned ID
 node {
   stage ('Checkout')
   {
+    //Clean Workspace
+    cleanWs()
+    
     // Get the code from the Git repository
     checkout scm
   }
