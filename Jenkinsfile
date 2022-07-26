@@ -19,7 +19,7 @@ node {
   stage('Git to ISPW Synchronization')
   {
     gitToIspwIntegration app: "${ISPW_Application}",
-    branchMapping: '''*main* => STG, per-branch'
+    branchMapping: '''*master* => STG, per-branch'
     bug* => EMR, per-branch
     feature1* => QA1, per-branch
     feature2* => QA2, per-branch
